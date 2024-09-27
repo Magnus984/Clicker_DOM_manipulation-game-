@@ -1,8 +1,5 @@
-let redDiv = document.getElementById(red)
-let yellowDiv = document.getElementById(yellow)
-let blueDiv = document.getElementById(blue)
-
 const squares = document.querySelectorAll('.colorBtn')
+const clearDiv = document.getElementById("clear")
 
 let timesClicked = {
     red: 0,
@@ -16,3 +13,10 @@ squares.forEach((square) => {
         square.innerText = timesClicked[square.value]
     })
 });
+
+const clear = () => {
+    squares.forEach(square => timesClicked[square.value] = 0)
+    squares.forEach(square => square.innerText = "")
+}
+
+clearDiv.addEventListener("click", clear)
