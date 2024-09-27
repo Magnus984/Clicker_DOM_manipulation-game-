@@ -1,0 +1,18 @@
+.colorBtn{
+    padding: 45px;
+    
+}
+
+#red{
+    background-color: red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
